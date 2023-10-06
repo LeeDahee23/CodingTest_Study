@@ -9,7 +9,7 @@
         - 외부 단편화 O, 내부 단편화 X
         - 동적 메모리 할당 문제
             
-            ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/0bc5ce9a-29d5-49bd-804b-ab3b0e3215dc/Untitled.png)
+            <p align="center"><img width="600" alt="동적 메모리 할당 문제" src="https://github.com/LeeDahee23/Study/assets/82389864/4b81f8c0-f112-4dfa-97e2-a7b7a01bc3d3"></p><br/>
   
             | 이름 | 설명 |
             | ------- | --- |
@@ -23,14 +23,14 @@
         - **외부 단편화**
             - `프로그램의 크기보다 분할의 크기가 작은 경우`에는 **해당 분할이 비어있는데도** 불구하고 프로그램을 **적재하지 못하는** 현상
                 
-                ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/7988f999-7d55-4968-a69b-6601ec289161/Untitled.png)
+                <p align="center"><img width="600" alt="외부 단편화" src="https://github.com/LeeDahee23/Study/assets/82389864/e937cb56-1e13-4e95-8f5d-1b36ea769fcb"></p>
                 
         
         - **내부 단편화**
             - `프로그램의 크기보다 분할의 크기가 큰 경우` 해당 분할에 **프로그램을 적재하고 남는 현상**
             하나의 분할 내부에 사용되지 않는 메모리 조각이 생기는 현상
                 
-                ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/2497f306-8897-4518-b183-5c4eb0aff745/Untitled.png)
+                <p align="center"><img width="600" alt="내부 단편화" src="https://github.com/LeeDahee23/Study/assets/82389864/2fd1fb38-000f-44ed-abc2-e4114c2ab816"></p>
                 
 
 1. **불연속 메모리 할당**
@@ -52,14 +52,14 @@
         - 물리 주소: 메모리 입장에서 바라본 주소, 정보가 실제로 저장된 하드웨어상의 주소
         - 논리 주소: CPU와 실행 중인 프로그램 입장에서 바라본 주소, 실행 중인 프로그램 각각에게 부여된 0번지부터 시작하는 주소
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/bb2b7320-1c49-4a67-8394-f2642de023b7/Untitled.png)
+<br/><p align="center"><img width="600" alt="페이징" src="https://github.com/LeeDahee23/Study/assets/82389864/5978394c-5771-4928-97c4-172dddc9aa75"></p><br/>
 
 - 페이지 테이블: 페이지 번호와 프레임 번호를 짝지어 주는 표
     - 프로세스가 물리 주소에 불연속적으로 배치되더라도 논리 주소(CPU가 바라보는 주소)에는 연속적으로 배치되도록 함
     - CPU가 페이지 테이블을 통해 페이지 번호만 보고, 해당 페이지가 어느 프레임에 적재되어 있는지 알 수 있음
     - 페이지 테이블의 시작주소를 page table base register에 저장함
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/6b89dc8e-0687-45ca-8a09-705a1b4d1cec/Untitled.png)
+<br/><p align="center"><img alt="페이징2" src="https://github.com/LeeDahee23/Study/assets/82389864/b7aa4296-8832-44a0-a1bd-57fc2f543aa5"></p><br/>
 
 - 외부 단편화 X
     - 페이지들의 크기가 프레임보다 큰 경우는 없기 때문
@@ -74,7 +74,7 @@
     - 가변 크기
 - 세그먼트 테이블: `세그먼트 번호`, `시작 주소`, `세그먼트 크기`를 가짐
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/0a3b1741-0ae3-463c-b6d0-7285e7d758d6/Untitled.png)
+<br/><p align="center"><img width="600" alt="세그먼테이션" src="https://github.com/LeeDahee23/Study/assets/82389864/022e1b53-37b4-40bd-bb87-ed7a0e0bc024"></p><br/>
 
 - 외부 단편화 O
     - 메모리에 계속해서 세그먼트가 들어가고 나가고 반복하면, 각각의 상주되어 있는 세그먼트들 사이에는 작은 빈틈이 생길 수 있음 → 작은 빈틈보다 큰 세그먼트는 메모리에 들어갈 수 없음
