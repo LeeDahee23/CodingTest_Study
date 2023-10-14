@@ -1,6 +1,7 @@
 # 운영체제 개념
 
-[사진 첨부]
+![image](https://github.com/LeeDahee23/Study/assets/82389864/1c433726-1570-4bb3-bb5c-d5a057f8ed90)
+
 
 - 사용자의 하드웨어, 시스템 리소스를 제어하고 프로그램에 대한 일반적인 서비스를 지원하는 시스템 소프트웨어
     
@@ -45,7 +46,7 @@
 
 # 운영체제 구조
 
-[사진 첨부]
+<img src="https://velog.velcdn.com/images%2Fdddooo9%2Fpost%2Fae507c30-a412-4af4-844e-7242fffcd2c6%2Fimage.png" />
 
 출처: [https://velog.io/@dddooo9/운영체제-운영체제란-정의-역할-구조#운영체제의-역할과-목표](https://velog.io/@dddooo9/%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80-%EC%A0%95%EC%9D%98-%EC%97%AD%ED%95%A0-%EA%B5%AC%EC%A1%B0#%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EC%9D%98-%EC%97%AD%ED%95%A0%EA%B3%BC-%EB%AA%A9%ED%91%9C)
 
