@@ -14,7 +14,8 @@
 - 스케줄링의 대상이 되는 작업(task) 이라는 용어와 거의 같은 의미로 쓰임.
     - 작업관리자
         
-        [사진 첨부]
+        ![image](https://github.com/LeeDahee23/Study/assets/82389864/c61b3da2-b529-44df-8522-25de1ac50261)
+
       
         출처: [https://inpa.tistory.com/entry/👩‍💻-프로세스-⚔️-쓰레드-차이#한눈에_이해하는_프로세스__스레드_개념](https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%E2%9A%94%EF%B8%8F-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%B0%A8%EC%9D%B4#%ED%95%9C%EB%88%88%EC%97%90_%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4__%EC%8A%A4%EB%A0%88%EB%93%9C_%EA%B0%9C%EB%85%90)
         
@@ -28,12 +29,11 @@
 - 프로세스가 할당받은 자원을 이용하는 실행의 단위
 - 기본적으로 프로세스당 최소 1개의 스레드(메인 스레드)를 가지고 있다.
 
-[사진 첨부]
       
 # 프로세스의 자원 구조
 
-[사진 첨부]
-      
+![image](https://github.com/LeeDahee23/Study/assets/82389864/f09d4b3e-f2d7-43ce-8868-c9642c133e42)
+   
 출처: [https://inpa.tistory.com/entry/👩‍💻-프로세스-⚔️-쓰레드-차이#한눈에_이해하는_프로세스__스레드_개념](https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%E2%9A%94%EF%B8%8F-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%B0%A8%EC%9D%B4#%ED%95%9C%EB%88%88%EC%97%90_%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4__%EC%8A%A4%EB%A0%88%EB%93%9C_%EA%B0%9C%EB%85%90)
 
 - 코드영역(Code, Text): 코드가 CPU가 해석 가능한 기계어 형태로 저장
@@ -43,9 +43,11 @@
 
 ### 스레드의 자원공유
 
-[사진 첨부]
-      
+<img src="https://gmlwjd9405.github.io/images/os-process-and-thread/thread.png" />  
 출처: https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html
+
+<br/>
+<br/>
 
 - 스레드끼리 프로세스의 자원을 공유함.
 - 스레드는 프로세스 내에서 각각 stack만 따로 할당 받고 code, data, heap 영역을 공유함.
