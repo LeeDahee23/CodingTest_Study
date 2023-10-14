@@ -6,9 +6,10 @@
 
 ### 평가 기준
 
-![출처 : https://deious.tistory.com/290](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/9af0af61-a3de-4f7a-809a-881cc4a729bd/Untitled.png)
+![image](https://github.com/LeeDahee23/Study/assets/82389864/e0bb5137-3706-4a30-8c90-7a3df18ab23d)
+*출처 : https://deious.tistory.com/290*
 
-출처 : https://deious.tistory.com/290
+<br/>
 
 | CPU 사용률(Utilization) | 전체 시스템 시간 중에서 CPU가 작업을 처리하는 시간의 비율 |
 | --- | --- |
@@ -40,7 +41,8 @@
 
 ### 프로세스 상태
 
-[사진 첨부]
+![image](https://github.com/LeeDahee23/Study/assets/82389864/cd03dca6-a067-44d1-b1c6-c4945b85c7e6)
+
 
 ### 스케줄링 큐
 
@@ -153,7 +155,8 @@
             
             입출력 집중 프로세스와 CPU 집중 프로세스는 어떤 작업을 더 많이 하냐에 따라 달라집니다. 입출력 집중 프로세스는 CPU burst보다 IO burst을 더 많이 하고, CPU 집중 프로세스는 IO burst보다 CPU burst를 더 많이 합니다. 그 말은 입출력 집중 프로세스는 CPU는 조금 사용하고 IO 장치를 기다리는 대기 상태로 금방 넘어간다는 의미입니다. 따라서 **입출력 집중 프로세스의 짧은 CPU 작업을 빨리 해치우고 넘겨버려서 다른 프로세스가 CPU를 사용할 수 있도록 하는 것이 효율적이게 되는 것**입니다.
             
-            ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/38552da6-340d-42c1-a9a1-b181ff331f03/f0ba0c8a-1e4d-4b06-9dbd-5fbac0b9a42a/Untitled.png)
+            ![image](https://github.com/LeeDahee23/Study/assets/82389864/7ea66156-dd5a-4f1a-afec-cda11517473c)
+
             
     - 입출력 집중 프로세스가 대기 상태로 넘어가고 나서 입출력 처리가 끝나고 다시 준비 상태로 돌아가게 되면(== 준비큐에 들어감) 다시 자신의 순서가 돌아올 때까지 기다립니다. 여기에서 순서를 정하는 방식이 CPU 스케줄링입니다.
 
