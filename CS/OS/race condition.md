@@ -18,11 +18,13 @@
 
       - **동기화가 이뤄지지 않았을 때**
         
-          ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/58569a95-dec8-468f-b33a-8737b18143d6/Untitled.png)
+          <img width="825" alt="image" src="https://github.com/LeeDahee23/Study/assets/82389864/f278e6a7-3adc-4a5b-a563-42016508f8e5">
+
 
        - **동기화가 이뤄진 경우**
         
-          ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/46938952-50a0-4c06-8351-2690f68c67ed/Untitled.png)
+          <img width="829" alt="image" src="https://github.com/LeeDahee23/Study/assets/82389864/87bb1447-23e4-4158-90d8-102f9c92e805">
+
         
 
 # 공유 자원과 임계 구역
@@ -37,7 +39,8 @@
 - 동시에 실행하면 문제가 발생하는 자원에 접근하는 코드 영역
 - 두 개 이상의 프로세스가 임계 구역에 진입하고자 하면 둘 중 하나는 대기해야 함
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/b65aa24f-f214-403a-bcbb-5542383f8c59/3a74ae75-3e39-4fba-b4e0-1a827818c910/Untitled.png)
+<img width="559" alt="image" src="https://github.com/LeeDahee23/Study/assets/82389864/50aee141-802c-4aca-b67f-c0d7768a1e48">
+
 
 # 레이스 컨디션 Race Condition
 
