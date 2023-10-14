@@ -7,13 +7,13 @@
     - 프로세스들이 차례대로 돌아가며 한정된 시간 동안만 CPU를 사용할 수 있음
     - 운영체제는 `프로세스의 실행 순서를 관리`하고, 프로세스에 CPU를 비롯한 `자원을 배분`함.
     
-    **➡️ 수많은 프로세스 사이에서 PCB로 특정 프로세스를 식별, 해당 프로세스를 처리**
+        **➡️ 수많은 프로세스 사이에서 PCB로 특정 프로세스를 식별, 해당 프로세스를 처리**
     
 - PCB는 **프로세스 생성 시에 만들어지고 실행이 끝나면 폐기**됨
     - 새로운 프로세스가 생성되었다 == 운영체제가 PCB를 생성했다
     - 프로세스가 종료되었다 == 운영체제가 해당 PCB를 폐기했다
     
-    [사진 첨부]
+        ![image](https://github.com/LeeDahee23/Study/assets/82389864/153cd551-c597-4c4b-8e28-8897446c8877)
   
 
 ### PCB가 필요한 이유
@@ -24,13 +24,13 @@
 
 ### PCB에 담기는 정보
 
-[사진 첨부]
+![image](https://github.com/LeeDahee23/Study/assets/82389864/a4cd5758-42ae-46ce-951c-64be4b46734f)
   
 1. Process ID (PID)
     - 특정 프로세스를 식별하기 위해 부여하는 고유한 번호
     - 작업 관리자(window) or 활성 상태 보기(macOS)
         
-        [사진 첨부]
+        <img src="https://github.com/LeeDahee23/Study/assets/82389864/4cc8ecdb-60b3-4ff9-847d-a342af7144b3" width="50%" />
   
 2. Registers
     - 프로세스는 이전까지 진행했던 작업들을 그대로 이어 실행하도록, 자신의 실행 차례가 돌아오면 이전까지 사용했던 레지스터의 중간값들을 모두 복원
@@ -66,7 +66,8 @@
 
 ### 과정
 
-[사진 첨부]
+![image](https://github.com/LeeDahee23/Study/assets/82389864/31b9cd10-e40e-4caf-8a0d-105e1e8ee053)
+
   
 ### 특징
 
@@ -77,6 +78,6 @@
 
 ## 출처
 
-도서 혼자 공부하는 컴퓨터 구조 + 운영체제
+[도서] 혼자 공부하는 컴퓨터 구조 + 운영체제
 
 [https://velog.io/@haero_kim/PCB-와-Context-Switching-알아보기](https://velog.io/@haero_kim/PCB-%EC%99%80-Context-Switching-%EC%95%8C%EC%95%84%EB%B3%B4%EA%B8%B0)
