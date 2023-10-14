@@ -4,7 +4,8 @@
 
 프로세스가 생성되면 사용자 영역에 [코드 영역, 데이터 영역, 힙 영역, 스택 영역]으로 나뉘어 저장됨.
 
-[사진 첨부]
+![image](https://github.com/LeeDahee23/Study/assets/82389864/46fa9c14-2b4b-4970-9649-0183e4125a31)
+
 
 출처: [https://inpa.tistory.com/entry/👩‍💻-프로세스-⚔️-쓰레드-차이#한눈에_이해하는_프로세스__스레드_개념](https://inpa.tistory.com/entry/%F0%9F%91%A9%E2%80%8D%F0%9F%92%BB-%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%E2%9A%94%EF%B8%8F-%EC%93%B0%EB%A0%88%EB%93%9C-%EC%B0%A8%EC%9D%B4#%ED%95%9C%EB%88%88%EC%97%90_%EC%9D%B4%ED%95%B4%ED%95%98%EB%8A%94_%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4__%EC%8A%A4%EB%A0%88%EB%93%9C_%EA%B0%9C%EB%85%90)
 
@@ -59,9 +60,6 @@
     - 높은 주소에서 낮은 주소로 할당
     - 컴파일 시에 크기가 결정됨
 
-[사진 첨부]
-
-출처: [https://www.inflearn.com/questions/981575/스택-영역의-크기는-정적인가요-동적인가요](https://www.inflearn.com/questions/981575/%EC%8A%A4%ED%83%9D-%EC%98%81%EC%97%AD%EC%9D%98-%ED%81%AC%EA%B8%B0%EB%8A%94-%EC%A0%95%EC%A0%81%EC%9D%B8%EA%B0%80%EC%9A%94-%EB%8F%99%EC%A0%81%EC%9D%B8%EA%B0%80%EC%9A%94)
 
 # 각 영역을 나눠 쓰는 이유
 
