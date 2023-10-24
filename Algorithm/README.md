@@ -5,7 +5,7 @@
 | title | description |
 | --- | --- |
 | BOJ | 백준 온라인 저지 문제 (https://www.acmicpc.net/) |
-| PG | 프로그래머스 문제 (https://programmers.co.kr/) |
+| Programmers | 프로그래머스 문제 (https://programmers.co.kr/) |
 
 ### 파일 설명
 - 각 폴더에는 java 파일과 readme 파일이 있습니다.
