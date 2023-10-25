@@ -10,12 +10,8 @@ public class BJ11058 {
 		long[] dp = new long[N+1];
 		
 		for(int i=1; i<=N; i++) {
-			if(dp[i] <= 0) {
-        dp[i] = i;
-      }
-			else {
-				dp[i] = Math.max(dp[i], i);
-			}
+			dp[i] = Math.max(dp[i], i);
+			
 			for(int j=i+3; j<=N; j++) {
 				dp[j] = Math.max(dp[j], dp[i] * (j-i-1)); 
 			}
