@@ -43,26 +43,22 @@ public class BJ18352 {
 	}
 	
 	private static int[] bfs(ArrayList<ArrayList<Integer>> graph, int start, int N) {
-		boolean[] visited = new boolean[N+1];
 		int[] dist = new int[N+1];
-		Arrays.fill(dist, INF);
+		Arrays.fill(dist, -1);
 		Queue<Integer> q = new LinkedList<>();
 		
 		dist[start] = 0;
 		q.add(start);
 		
 		while(!q.isEmpty()) {
-			int cur = q.poll();
-			
-			if(visited[cur]) continue;
-			visited[cur] = true;
-			
-			for(int next : graph.get(cur)) {
-				if(!visited[next] && dist[next] > dist[cur] + 1) {
-					dist[next] = dist[cur] + 1;
-					q.offer(next);
-				}
-			}
+		  int cur = q.poll();
+		  
+		  for(int next : graph.get(cur)) {
+		    if(dist[next] == -1) {
+		      dist[next] = dist[cur] + 1;
+		      q.offer(next);
+		    }
+		  }
 		}
 		
 		return dist;
