@@ -1,36 +1,22 @@
 import java.util.*;
 
 class Solution {
-    ArrayList<Integer> list = new ArrayList<>();
+    int count = 0;
     public int solution(int[] numbers, int target) {
-        int answer = 0;
-        int[] arr = {1, -1};
-        ArrayList<Integer> ops = new ArrayList<>();
+        findNum(numbers, 0, target, 0);
         
-        findNum(arr, ops, numbers.length, numbers);
-        for(int num : list){
-            if(num == target) answer ++;
-        }
-        
-        return answer;
+        return count;
     }
     
-    private void findNum(int[] arr, ArrayList<Integer> ops, int N, int[] numbers){
-        if(ops.size() == N){
-            int sum = 0;
-            
-            for(int i=0; i<N; i++){
-                sum += ops.get(i) * numbers[i];
+    private void findNum(int[] numbers, int idx, int target, int sum){
+        if(idx == numbers.length){
+            if(sum == target){
+                count ++;
             }
-            
-            list.add(sum);
             return;
         }
         
-        for(int i=0; i<arr.length; i++){
-            ops.add(arr[i]);
-            findNum(arr, ops, N, numbers);
-            ops.remove(ops.size()-1);
-        }
+        findNum(numbers, idx + 1, target, sum + numbers[idx]);
+        findNum(numbers, idx + 1, target, sum - numbers[idx]);
     }
 }
