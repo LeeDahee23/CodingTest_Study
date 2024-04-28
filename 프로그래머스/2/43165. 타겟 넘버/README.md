@@ -1,6 +1,17 @@
 # [level 2] 타겟 넘버 - 43165 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43165) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/43165)
+
+## 🤓 풀이
+
+### 접근 방식
+숫자들의 부호는 + or - 니까 부호가 가질 수 있는 모든 경우를 구한 뒤에 부호 순서대로 숫자를 더해서 총 합이 target과 같아지면 count++ 해야한다고 생각함
+모든 경우를 구해야 하므로 **백트래킹**
+### 풀이
+**findNum**: 부호의 경우를 구한 뒤 총합을 구하는 함수
+- ArrayList ops에 부호를 순서대로 넣으면서 findNum 재귀 호출
+- findNum 다 돌고나면 ops 맨 뒤 요소를 빼줌
+- ops의 크기가 numbers의 길이와 같아지면(= 모든 숫자들의 부호를 구해주면) 부호를 적용해서 총합 구함
 
 ### 성능 요약
 
