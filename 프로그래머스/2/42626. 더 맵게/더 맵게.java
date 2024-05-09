@@ -8,23 +8,21 @@ class Solution {
         }
         
         int answer = 0;
-        while(!pq.isEmpty()){
-            int s1 = pq.poll();
+        while(pq.size() > 1){
+            int s1 = pq.poll(); // 제일 작은 스코빌
+            int s2 = pq.poll(); // 두번째로 작은 스코빌
+            
             if(s1 >= K){
                 break;
             }
-            if(pq.isEmpty()){
-                answer = -1;
-                break;
-            }
             else{
-                int s2 = pq.poll();
                 int newS = s1 + s2*2;
                 pq.offer(newS);
                 answer ++;
             }
         }
         
+        if(pq.size() >= 1 && pq.peek() < K) answer = -1;
         return answer;
     }
 }
