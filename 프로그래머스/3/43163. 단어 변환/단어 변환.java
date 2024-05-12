@@ -13,17 +13,6 @@ class Word{
 class Solution {
     private int answer = 0;
     public int solution(String begin, String target, String[] words) {
-        // target이 words에 없으면 return 0
-        boolean hasTarget = false;
-        for(String word : words){
-            if(word.equals(target)){
-                hasTarget = true;
-                break;
-            }
-        }
-        
-        if(!hasTarget) return 0;
-        
         find(words, begin, target);
         return answer;
     }
