@@ -5,7 +5,7 @@ class Solution {
     public int[] solution(int[] fees, String[] records) {
         // 주차 시간 저장할 map
         HashMap<String, String> in = new HashMap<>(); // 입차시간 기록
-        HashMap<String, Integer> map = new HashMap<>(); // 주차시간 저장
+        HashMap<String, Integer> totalTime = new HashMap<>(); // 주차시간 저장
         
         defaultMin = fees[0];
         defaultFee = fees[1];
@@ -29,7 +29,7 @@ class Solution {
                 // 주차시간 구하기
                 int parkingMin = getParkingMin(inTime, time);
                 // map에 찾아서 더하기
-                map.put(carNum, map.getOrDefault(carNum, 0) + parkingMin);
+                totalTime.put(carNum, totalTime.getOrDefault(carNum, 0) + parkingMin);
                 // 입차시간 삭제하기
                 in.remove(carNum);
             }
@@ -38,16 +38,16 @@ class Solution {
         // 입차했는데 출차 못한 차량 시간 구하기
         for(String key : in.keySet()){
             int parkingMin = getParkingMin(in.get(key), "23:59");
-            map.put(key, map.getOrDefault(key, 0) + parkingMin);
+            totalTime.put(key, totalTime.getOrDefault(key, 0) + parkingMin);
         }
         
-        ArrayList<String> keys = new ArrayList<>(map.keySet());
+        ArrayList<String> keys = new ArrayList<>(totalTime.keySet());
         Collections.sort(keys);
         int[] answer = new int[keys.size()];
         
         for(int i=0; i<keys.size(); i++){
-            String key = keys.get(i);
-            answer[i] = getParkingCost(map.get(key));
+            String carNum = keys.get(i);
+            answer[i] = getParkingFee(totalTime.get(carNum));
         }
         
         return answer;
@@ -65,7 +65,7 @@ class Solution {
     }
     
     // 주차 요금 구하기
-    private int getParkingCost(int minute){
+    private int getParkingFee(int minute){
         if(minute <= defaultMin){
             return defaultFee;
         }
