@@ -3,8 +3,13 @@ import java.util.*;
 class Solution {
     public int solution(String s) {
         int answer = 0;
+        StringBuilder sb = new StringBuilder();
+        sb.append(s);
         for(int i=0; i<s.length(); i++){
-            s = s.substring(1, s.length()) + s.substring(0, 1);
+            // 괄호 회전하기
+            sb.append(s.charAt(0));
+            sb.deleteCharAt(0);
+            s = sb.toString();
             if(isRight(s)){
                 answer ++;
             }
